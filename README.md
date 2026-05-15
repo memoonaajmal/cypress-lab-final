@@ -9,27 +9,60 @@ https://www.saucedemo.com
 
 ---
 
-# Test Files
+# Task 1 — UI Test Suite (Functional Testing)
 
-## login.cy.js
+## Test Files
+
+### login.cy.js
 Contains:
 - Valid Login Test
 - Invalid Login Test
 
-## navigation.cy.js
+### navigation.cy.js
 Contains:
 - Open Product Page Test
 - Visit Multiple Pages Test
 
-## form.cy.js
+### form.cy.js
 Contains:
 - Checkout Form Submission Test
 
-## bonus.cy.js
+### bonus.cy.js
 Contains:
 - Visibility Test
 - Dropdown Selection Test
 - Logout Test
+
+---
+
+# Task 2 — Assertions, Aliases & Custom Commands
+
+## Task 2 Test Files
+
+### assertions.cy.js
+Contains:
+- be.visible Assertion Test
+- have.text Assertion Test
+- have.attr Assertion Test
+- Negative Assertion Test
+
+### alias.cy.js
+Contains:
+- Alias Practice Test using .as()
+
+### customCommand.cy.js
+Contains:
+- Custom Login Command Test
+
+---
+
+# Task 2 Features Covered
+
+- Assertions
+- Negative Assertions
+- Aliases
+- Custom Commands
+- beforeEach() Hook
 
 ---
 
@@ -87,13 +120,13 @@ npx cypress open
 
 ---
 
-## Step 5 — Run Tests
+# How to Run Task 1 Tests
 
 After Cypress opens:
 
 1. Select E2E Testing
 2. Choose browser
-3. Click any test file:
+3. Run any of these files:
    - login.cy.js
    - navigation.cy.js
    - form.cy.js
@@ -103,11 +136,39 @@ The tests will run automatically.
 
 ---
 
+# How to Run Task 2 Tests
+
+After Cypress opens:
+
+1. Select E2E Testing
+2. Choose browser
+3. Run the following files individually:
+   - assertions.cy.js
+   - alias.cy.js
+   - customCommand.cy.js
+
+All tests should pass successfully and display green checkmarks.
+
+---
+
+# Custom Command
+
+A reusable custom login command was created in:
+
+```bash
+cypress/support/commands.js
+```
+
+This command is used to avoid repeating login steps in multiple test cases.
+
+---
+
 # Expected Result
 
 All test cases should pass successfully and show green checkmarks in Cypress.
 
 ---
+
 
 # Author
 
